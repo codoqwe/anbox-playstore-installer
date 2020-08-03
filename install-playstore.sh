@@ -162,7 +162,7 @@ echo "Extracting anbox android image"
 if $WITH_SNAP;then
 	cp $SNAP_TOP/anbox/current/android.img .
 else
-	cp /var/lib/anbox/android.img .
+	cp /aind-android.img ./android.img
 fi
 $SUDO $UNSQUASHFS android.img
 
