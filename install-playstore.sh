@@ -302,10 +302,10 @@ $SUDO sed -i '/ro.zygote=zygote64_32/a\ro.dalvik.vm.native.bridge=libhoudini.so'
 # enable opengles
 echo "ro.opengles.version=131072" | $SUDO tee -a "$OVERLAYDIR/system/build.prop"
 
-echo "Restart anbox"
+#echo "Restart anbox"
 
-if $WITH_SNAP;then
-	$SUDO snap restart anbox.container-manager
-else
-	$SUDO systemctl restart anbox-container-manager.service
-fi
+#if $WITH_SNAP;then
+#	$SUDO snap restart anbox.container-manager
+#else
+#	$SUDO systemctl restart anbox-container-manager.service
+#fi
