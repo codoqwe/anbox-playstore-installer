@@ -135,7 +135,7 @@ if [ ! -d "$COMBINEDDIR" ]; then
 ExecStart=
 ExecStart=/usr/bin/anbox container-manager --daemon --privileged --data-path=/var/lib/anbox --use-rootfs-overlay
 EOF
-		$SUDO systemctl daemon-reload
+#			$SUDO systemctl daemon-reload
 #		$SUDO systemctl restart anbox-container-manager.service
 	fi
 
